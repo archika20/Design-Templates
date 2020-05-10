@@ -1,0 +1,103 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.main{
+   height: 754px;
+   background-color: white;
+   position: relative;
+}
+
+.outer1{
+	clip-path: polygon(100% 0, 100% 100%, 0 100%);
+	width: 950px;
+	height: 350px;
+	background-color: #574f7d;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+.outer2{
+	clip-path: polygon(100% 0, 0 100%, 0 0);
+	width: 950px;
+	height: 350px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #574f7d;
+}
+
+.outer3{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform:translate(-50%,-50%);
+	width: 1150px;
+	height: 600px;
+	background-color: white;
+	box-shadow: 2px 2px 19px 1px #574f7d;
+	display: flex;
+	flex-direction: row;
+}
+
+.inner1{
+	flex: 1;
+	background-image: url("dogking.jpg");
+	background-size: contain;
+	padding: 10px;
+	margin: 30px;
+}
+
+.inner2{
+	position: relative;
+	flex: 1;
+	background-color: white;	
+}
+
+input{
+	position: relative;
+	left: 50%;
+	top: 50%;
+	transform:translate(-50%,-50%);
+	top: 120px;
+}
+
+input[type="text"],input[type="password"],input[type="email"]{
+	width: 300px;
+	padding: 15px;
+    margin-top: 40px;
+    border: none;
+    border-bottom: 1px solid #574f7d;
+    outline: none; 
+}
+
+input[type="submit"]{
+	width: 150px;
+	padding: 15px;
+	border-radius: 25px;
+	background-color: #574f7d;
+	outline: none;
+	color: white;
+	font-size: 15px;
+	margin-top: 70px;
+	border:none;
+}
+
+::placeholder{
+	color: #574f7d;
+	font-size: 19px;
+}
+
+i{
+	position: relative;
+	top: 105px;
+	left: 100px;
+	color: #574f7d;
+}
+
+input[type="submit"]:hover{
+	background-color: #4f3a65;
+	cursor: pointer;
+}
